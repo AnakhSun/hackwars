@@ -12,7 +12,6 @@ def palindromize(number):
                     if number[i] != number[n*2-i]:
                         flag = 0
                         iterations += 1
-                        # palindromize(number, iterations)
                         break
 
             if len(number) % 2 == 0:
@@ -21,7 +20,6 @@ def palindromize(number):
                     if number[i] != number[n*2-i-1]:
                         flag = 0
                         iterations += 1
-                        # palindromize(number, iterations)
                         break
             
             if flag == 1:
