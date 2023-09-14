@@ -22,7 +22,6 @@ Your function should return True if your character survives, and False if not.
 // 5 is above sea level and breath meter is capped at 10 (would've been 12 otherwise).
 // Character survives!
 '''
-
 def diving_minigame(array):
     oxygen = 10
     for pos in array:
