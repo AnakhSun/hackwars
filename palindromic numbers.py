@@ -1,6 +1,7 @@
 
 def palindromize(number):
     if number != 196:
+        print(number)
         number = str(number)
         flag = 0
         iterations  = 0

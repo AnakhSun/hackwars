@@ -13,14 +13,15 @@ def presses(phrase):
                 "0": [" ", "0"],
                 "#": ["#"]}
 
-    sum = 0
+    sum, answer = 0, ''
     for char in phrase:
         for key, simbols in keyboard.items():
             if char in simbols:
                 for i in range(len(simbols)):
                     if char == simbols[i]:
                         sum += i+1
+                        answer+= key*(i+1)
                         break
-    return sum  
+    return answer
                   
 print(presses("lol"))
